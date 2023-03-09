@@ -100,6 +100,5 @@ class PoeManager(hass.Hass):
 
         # get API instance
         with UnifiAPI(host=self.unifi_host, user=self.unifi_user, password=self.unifi_pass, verify=False) as api:
-            api.login()
             log(f'change_poe_mode(mac={mac}, mode={mode}, ports={ports})')
             api.change_poe_mode(mac=mac, mode=mode, ports=ports)
