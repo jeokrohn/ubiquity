@@ -1,0 +1,27 @@
+[project]
+name = ""
+version = "0.0.1"
+requires-python = "~=3.10.0"
+dependencies = [
+    "requests",
+    "python-dotenv",
+    "urllib3",
+    "pydantic",
+]
+
+[dependency-groups]
+dev = [
+    "cmd2",
+    "hassapi",
+    "appdaemon",
+    "ruff>=0.15.6",
+    "pre-commit>=4.5.1",
+]
+
+[tool.uv]
+package = false
+default-groups = "all"
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"
