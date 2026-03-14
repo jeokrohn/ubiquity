@@ -4,7 +4,6 @@ version = "0.0.1"
 requires-python = "~=3.10.0"
 dependencies = [
     "requests",
-    "python-dotenv",
     "urllib3",
     "pydantic",
 ]
@@ -16,6 +15,7 @@ dev = [
     "appdaemon",
     "ruff>=0.15.6",
     "pre-commit>=4.5.1",
+    "python-dotenv>=1.2.2",
 ]
 
 [tool.uv]
